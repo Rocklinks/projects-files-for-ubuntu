@@ -14,7 +14,7 @@ pods.yml
 
 ### choose one method
 minikube start
-minikube start --driver=virtualbox
+minikube start --memory=4096 --driver=hyperkit
 
 ### Get nodes
 kubectl get nodes
