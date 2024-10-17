@@ -30,5 +30,6 @@ curl 10.244.0.8
 ## out of minikube 
 logout
 
-
+### Kubectl Documentation for future reference
+https://kubernetes.io/docs/reference/kubectl/quick-reference/
 
