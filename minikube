@@ -16,6 +16,9 @@ pods.yml
 minikube start
 minikube start --memory=4096 --driver=hyperkit
 
+### Run a pod
+kubectl apply -f pods.yaml
+
 ### Get nodes
 kubectl get nodes
 ### get pods and pods with ip
