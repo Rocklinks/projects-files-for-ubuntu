@@ -32,6 +32,13 @@ curl 10.244.0.8
 
 ## out of minikube 
 logout
+## Delete pod
+kubectl delete pod nginx
+
+## describe about the pod
+kubectl dscribe pod nginx
+
+kubectl logs nginx
 
 ### Kubectl Documentation for future reference
 https://kubernetes.io/docs/reference/kubectl/quick-reference/
