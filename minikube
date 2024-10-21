@@ -43,3 +43,50 @@ kubectl logs nginx
 ### Kubectl Documentation for future reference
 https://kubernetes.io/docs/reference/kubectl/quick-reference/
 
+## Get all
+kubectl get all
+
+## Get All for all clusters
+kubectl get all -A
+
+
+##### Day 2 ####
+create a new file nameed nginx-deploy.yaml
+
+kubectl apply -f nginx-deploy.yaml
+kubectl get pods
+
+## check the pods with deploy and rs
+kubectl get deploy 
+kubectl get rs
+
+
+kubectl delete pods nginx-deploy
+
+kubectl get pods
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
