@@ -51,7 +51,7 @@ kubectl get all -A
 
 
 ##### Day 2 ####
-create a new file nameed nginx-deploy.yaml
+create a new file named nginx-deploy.yaml
 
 kubectl apply -f nginx-deploy.yaml
 kubectl get pods
@@ -60,13 +60,32 @@ kubectl get pods
 kubectl get deploy 
 kubectl get rs
 
-
 kubectl delete pods nginx-deploy
-
 kubectl get pods
 
+## Incase you have typed the image version wrongly
+kubectl set image deployment/nginx-deployment nginx=nginx:1.161
 
+## Describe deployment
+kubectl describe deployment
 
+##check the history
+kubectl rollout history deployment/nginx-deployment
+
+## revisions
+kubectl rollout history deployment/nginx-deployment --revision=2
+
+## Rollback
+kubectl rollout undo deployment/nginx-deployment
+
+## rollback to specific version
+kubectl rollout undo deployment/nginx-deployment --to-revision=2
+
+## scale deployment
+kubectl scale deployment/nginx-deployment --replicas=10
+
+## auoscale the nginx for cpu80%
+kubectl autoscale deployment/nginx-deployment --min=10 --max=15 --cpu-percent=80
 
 
 
