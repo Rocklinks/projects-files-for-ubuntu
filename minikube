@@ -91,6 +91,9 @@ kubectl autoscale deployment/nginx-deployment --min=10 --max=15 --cpu-percent=80
  minikube start --nodes 2 -p rocklincluster
 minikube start --nodes 2 -p rocklincluster --driver=virtualbox
 
+## Add more worker nodes if needed (use name of the cluster to add the node)
+ minikube add --worker -p rocklincluster 
+
 
 
 
