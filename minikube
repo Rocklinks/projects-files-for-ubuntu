@@ -94,6 +94,9 @@ minikube start --nodes 2 -p rocklincluster --driver=virtualbox
 ## Add more worker nodes if needed (use name of the cluster to add the node)
  minikube add --worker -p rocklincluster 
 
+## delete a node using minikube using the nodename and the control pane name
+ minikube node delete rocklincluster -p rocklincluster-m02
+
 
 
 
