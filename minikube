@@ -87,6 +87,9 @@ kubectl scale deployment/nginx-deployment --replicas=10
 ## auoscale the nginx for cpu80%
 kubectl autoscale deployment/nginx-deployment --min=10 --max=15 --cpu-percent=80
 
+## For multinode kubernetes cluster(number of nodes, p=name, if needed can choose the desired driver like docker,vbox etc)
+ minikube start --nodes 2 -p rocklincluster
+
 
 
 
