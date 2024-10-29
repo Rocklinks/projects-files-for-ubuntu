@@ -1,0 +1,4 @@
+kubectl get all
+
+## get all the information about the pods, max 9
+kubectl get pods -v 7
