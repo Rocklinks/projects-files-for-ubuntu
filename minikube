@@ -97,7 +97,7 @@ minikube start --nodes 2 -p rocklincluster --driver=virtualbox
 ## delete a node using minikube using the nodename and the control pane name
  minikube node delete rocklincluster -p rocklincluster-m02
 
-
+minikube delete
 
 
 
