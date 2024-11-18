@@ -100,7 +100,24 @@ minikube start --nodes 2 -p rocklincluster --driver=virtualbox
 minikube delete
 
 
+## Find the minikube ip
+minikube ip
 
+## Minikube get pods and nodes
+kubectl get pods
+kubectl get nodes
+
+## kubectl get the services
+kubectl get svc
+
+## Kubectl run service file
+kubectl apply -f service.yml
+
+## acces the minikube ip and acces the app locally
+minikube ip
+access the minikube ip with the node port mentioned in the service yml file
+minikube <minikube ip>:<node port>
+## Some times access the minikube using the minikube ip: node port/demo     /admin
 
 
 
