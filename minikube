@@ -118,7 +118,7 @@ minikube ip
 access the minikube ip with the node port mentioned in the service yml file
 minikube <minikube ip>:<node port>
 ## Some times access the minikube using the minikube ip: node port/demo     /admin
-
+kubectl get pods -A | grep nginx
 
 
 
